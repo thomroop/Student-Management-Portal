@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 function StudentDetail() {
-  const { id } = useParams(); // get id from URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
   const student = useSelector((state) =>

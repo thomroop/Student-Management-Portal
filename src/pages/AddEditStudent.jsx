@@ -39,7 +39,7 @@ function AddEditStudent() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // ✅ Validation
+ 
     if (!formData.name || !formData.email || !formData.phone) {
       toast.error('All fields are required!');
       return;

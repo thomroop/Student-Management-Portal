@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setStudents, deleteStudent } from '../redux/studentSlice';
 import StudentCard from '../components/StudentCard';
+import { Link } from 'react-router-dom';
 
 
 function StudentList() {
@@ -41,12 +42,12 @@ function StudentList() {
     <div className="space-y-4">
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-bold">Student List</h2>
-        <a
-          href="/add"
+        <link
+          to="/add"
           className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
         >
           + Add Student
-        </a>
+        </link>
       </div>
 
       {students.length === 0 ? (
